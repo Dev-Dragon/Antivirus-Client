@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Dev Dragon</Authors>
+    <Company>DevDragon.io</Company>
+    <Product>Dev Dragon Antivirus</Product>
+    <Copyright>Geidans Solutions Ltd.</Copyright>
+    <PackageProjectUrl>https://www.devdragon.io</PackageProjectUrl>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <PackageVersion>1.0.0.0</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
