@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="testsettings.Development.json">
+    <Content Include="testsettings.Development.json" Condition="Exists('testsettings.Development.json')">
       <DependentUpon>testsettings.json</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
