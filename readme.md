@@ -33,7 +33,7 @@ Content-Type: image/jpeg
 ----------------------------746262877764172707517154--
 ```
 
-DevDragon Web Service will scan the file immadiately and return you the following response:
+DevDragon Web Service will scan the file immediately and return you the following response:
 
 ```
 {
