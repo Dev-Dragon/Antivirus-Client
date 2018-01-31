@@ -26,7 +26,7 @@ namespace DevDragon.AV.Client.Tests
         [Test]
         public async Task PositiveTestScan()
         {
-            var client = new AntivirusClient(this.Settings.AccessKey, false);
+            var client = new AntivirusClient(this.Settings.AccessKey);
             var result = await client.ScanFile(GetSampleFilePath());
 
             Assert.That(result.HasVirus, Is.EqualTo(false));
@@ -35,7 +35,7 @@ namespace DevDragon.AV.Client.Tests
         [Test]
         public void HandlingInvalidKeyExceptionTest()
         {
-            var client = new AntivirusClient("invalidkey", false);
+            var client = new AntivirusClient("invalidkey");
             var ex = Assert.ThrowsAsync<FileScanException>(async () => 
             {
                 var result = await client.ScanFile(GetSampleFilePath());

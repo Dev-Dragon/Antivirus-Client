@@ -16,20 +16,22 @@ namespace DevDragon.AV.Client
         /// Initialises Antivirus Client
         /// </summary>
         /// <param name="accessKey">Subscription Access Key. Can be obtained from your DevDragon account page</param>
-        /// <param name="production">Use production environment by default</param>
-        public AntivirusClient(string accessKey, bool production = true)
+        public AntivirusClient(string accessKey)
+            : this(accessKey, "https://api.devdragon.io")
+        {
+        }
+
+        /// <summary>
+        /// Initialises Antivirus Client
+        /// </summary>
+        /// <param name="accessKey">Subscription Access Key. Can be obtained from your DevDragon account page</param>
+        /// <param name="serviceUrl">DevDragon Antivirus service URL i.e. https://api.devdragon.io</param>
+        public AntivirusClient(string accessKey, string serviceUrl)
         {
             _httpClient = new HttpClient();
 
-            if (production)
-            {
-                throw new NotImplementedException("Production environment hasn't been released yet");
-            }
-            else
-            {
-                _httpClient.BaseAddress = new Uri("https://dragonfs-uat.gftestplatform.net");
-                _httpClient.DefaultRequestHeaders.Add("X-AUTH", accessKey);
-            }
+            _httpClient.BaseAddress = new Uri(serviceUrl);
+            _httpClient.DefaultRequestHeaders.Add("X-AUTH", accessKey);
         }
 
         private HttpClient _httpClient = null;
