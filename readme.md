@@ -131,5 +131,6 @@ catch(Exception e){
 
 ## Help & Documentation
 
-Please visit our website for further help, documentation and other DevDragon features.  
-https://www.dev-dragon.com
+Please visit our website for further information.  
+https://www.devdragon.io
+
