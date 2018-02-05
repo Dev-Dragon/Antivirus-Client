@@ -10,6 +10,7 @@
     <PackageProjectUrl>https://www.devdragon.io</PackageProjectUrl>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageVersion>1.0.0.0</PackageVersion>
+    <Description>Dev Dragon Antivirus is a Sophos-backed web service that scans your files for viruses</Description>
   </PropertyGroup>
 
   <ItemGroup>
