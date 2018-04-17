@@ -115,7 +115,7 @@ Successful scan operation will fill in the following to the `result` object:
 `AntivirusClient` can throw `FileScanException` exceptions. A sample handling can be achieve as the following:
 
 ```csharp
-var antivirusClient = new AntivirusClient("{your accessKey here}");
+var client = new AntivirusClient("{your accessKey here}");
 
 try {
     var result = await client.ScanFile("{file path here}");
