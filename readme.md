@@ -6,7 +6,7 @@ After obtaining your `accessKey` from your DevDragon account, you can post the f
 
 ## Scanning File via Rest API
 
-Please don't forget to add your `accessKey` in headers as the following:
+Please use the **https** scheme and don't forget to add your `accessKey` in headers as the following:
 
 ```
 X-AUTH: <your API key>
