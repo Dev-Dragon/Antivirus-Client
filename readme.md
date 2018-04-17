@@ -15,10 +15,11 @@ X-AUTH: <your API key>
 A sample **HTTP POST** operation could be achived as following:
 
 ```
+POST /scan HTTP/1.1
+Host: api.devdragon.io
 X-AUTH: <your API key>
 cache-control: no-cache
 Accept: */*
-Host: <DevDragon API URL>
 accept-encoding: gzip, deflate
 content-type: multipart/form-data; boundary=--------------------------746262877764172707517154
 content-length: 6740
