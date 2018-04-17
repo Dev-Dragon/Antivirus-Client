@@ -86,7 +86,7 @@ var antivirusClient = new AntivirusClient("{your accessKey here}");
 To submit a file for scan, simply profide the file path. `AntivirusClient` will upload the file from your server to DevDragon and give you back `ScanResult` that contains the virus check results.
 
 ```csharp
-var result = await client.ScanFile("{file path here}");
+var result = await antivirusClient.ScanFile("{file path here}");
 ```
 
 Successful scan operation will fill in the following to the `result` object:
@@ -115,10 +115,10 @@ Successful scan operation will fill in the following to the `result` object:
 `AntivirusClient` can throw `FileScanException` exceptions. A sample handling can be achieve as the following:
 
 ```csharp
-var client = new AntivirusClient("{your accessKey here}");
+var antivirusClient = new AntivirusClient("{your accessKey here}");
 
 try {
-    var result = await client.ScanFile("{file path here}");
+    var result = await antivirusClient.ScanFile("{file path here}");
 }
 catch(FileScanException fse){
     // Handling logic here
